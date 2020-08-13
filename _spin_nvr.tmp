@@ -1,0 +1,9 @@
+never p {    /* !([] (((seen<N)) || ((tour>MAX)))) */
+T0_init:
+	do
+	:: atomic { (! ((((seen<N)) || ((tour>MAX))))) -> assert(!(! ((((seen<N)) || ((tour>MAX)))))) }
+	:: (1) -> goto T0_init
+	od;
+accept_all:
+	skip
+}
