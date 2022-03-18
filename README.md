@@ -10,7 +10,9 @@
 
 3. Compile the tool:
 >> java -jar antlr-4.8-complete.jar Promela.g4 -visitor
+>> 
 >> javac -cp "antlr-4.8-complete.jar:." Promela*.java
+>> 
 >> javac -cp "antlr-4.8-complete.jar:." Root.java
 
 4. Run the tool by resolving simple.pml:
