@@ -8,9 +8,12 @@
 
 2. Download Promela_sketcher in the same directory
 
-3. Run the tool by:
->> java -cp "antlr-4.5.3-complete.jar:." Root simple.pml
+3. Compile the tool:
+>> java -jar antlr-4.8-complete.jar Promela.g4 -visitor
+>> javac -cp "antlr-4.8-complete.jar:." Promela*.java
+>> javac -cp "antlr-4.8-complete.jar:." Root.java
 
-5. The assertions and deadlock-freedom for fwarm*-*.pml and minepumpARP.pml are checked automatically without specfying additional arguments.
->> java -cp "antlr-4.5.3-complete.jar:." Root minepumpARP.pml
+4. Run the tool by resolving simple.pml:
+>> java -cp "antlr-4.8-complete.jar:." Root simple.pml
+
 
